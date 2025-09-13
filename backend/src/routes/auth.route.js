@@ -1,8 +1,8 @@
-import expreess from 'express';
+import express from 'express';
 import { signup, login, logout, updateProfile, checkAuth} from '../controllers/auth.controller.js';
 import { protectRoute } from '../middleware/auth.middleware.js';
 
-const router = expreess.Router()
+const router = express.Router()
 
 
 router.post("/signup", signup);
